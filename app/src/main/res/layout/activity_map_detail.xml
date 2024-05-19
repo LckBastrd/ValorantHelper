@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Кнопка Назад -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_gravity="start"
+        android:layout_margin="16dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/miniMap"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/map_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/zoneButton1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#00FFFFFF"
+            android:text=""
+            app:layout_constraintTop_toTopOf="@id/miniMap"
+            app:layout_constraintBottom_toTopOf="@id/zoneButton3"
+            app:layout_constraintStart_toStartOf="@id/miniMap"
+            app:layout_constraintEnd_toStartOf="@id/zoneButton2"
+            app:layout_constraintWidth_percent="0.5"
+            app:layout_constraintHeight_percent="0.5" />
+
+        <Button
+            android:id="@+id/zoneButton2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#00FFFFFF"
+            android:text=""
+            app:layout_constraintTop_toTopOf="@id/miniMap"
+            app:layout_constraintBottom_toTopOf="@id/zoneButton4"
+            app:layout_constraintStart_toEndOf="@id/zoneButton1"
+            app:layout_constraintEnd_toEndOf="@id/miniMap"
+            app:layout_constraintWidth_percent="0.5"
+            app:layout_constraintHeight_percent="0.5" />
+
+        <Button
+            android:id="@+id/zoneButton3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#00FFFFFF"
+            android:text=""
+            app:layout_constraintTop_toBottomOf="@id/zoneButton1"
+            app:layout_constraintBottom_toBottomOf="@id/miniMap"
+            app:layout_constraintStart_toStartOf="@id/miniMap"
+            app:layout_constraintEnd_toStartOf="@id/zoneButton4"
+            app:layout_constraintWidth_percent="0.5"
+            app:layout_constraintHeight_percent="0.5" />
+
+        <Button
+            android:id="@+id/zoneButton4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#00FFFFFF"
+            android:text=""
+            app:layout_constraintTop_toBottomOf="@id/zoneButton2"
+            app:layout_constraintBottom_toBottomOf="@id/miniMap"
+            app:layout_constraintStart_toEndOf="@id/zoneButton3"
+            app:layout_constraintEnd_toEndOf="@id/miniMap"
+            app:layout_constraintWidth_percent="0.5"
+            app:layout_constraintHeight_percent="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Список превью видео -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/videoPreviewRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical" />
+</LinearLayout>

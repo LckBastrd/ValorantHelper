@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "862634175489",
+    "project_id": "valoranthelper-42c28",
+    "storage_bucket": "valoranthelper-42c28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862634175489:android:e20793ff855c30130ce400",
+        "android_client_info": {
+          "package_name": "com.example.valoranthelper"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkFCkAtGOdqnP6moEszL5zQWafBWr0UVk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
